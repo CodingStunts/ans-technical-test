@@ -9,3 +9,17 @@ export const getCurrencyData = async () => {
       console.log(error);
     }
   };
+  
+  export const getConversionToBitcoin = async (currency: string, value: string) => {
+    try {
+      const res = await fetch(`https://blockchain.info/tobtc?currency=${currency}&value=${value}`);
+      const convertedAmount: number = await res.json();
+      return {
+        bitcoinAmount: convertedAmount,
+        currency: currency,
+        value: value,
+      };
+    } catch (error) {
+      console.log(error);
+    }
+  };

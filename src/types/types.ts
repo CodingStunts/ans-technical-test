@@ -8,3 +8,8 @@ export interface CurrencyDetails {
 
 export type Currencies = Record<string, CurrencyDetails>;
 
+export interface ConvertedDetails {
+    bitcoinAmount: number,
+    currency: string,
+    value: string,
+};

@@ -1,3 +1,5 @@
+import CurrencyConverter from "@/components/CurrencyConverter";
+
 import { getCurrencyData } from "@/api";
 
 export const Converter = async () => {

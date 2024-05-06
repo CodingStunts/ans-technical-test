@@ -22,10 +22,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunito.className}>
-      <nav className="mt-5"> 
-        <Link className="text-xl p-7" href="/">Home</Link>
-        <Link className="text-xl p-7" href="/converter">Converter</Link>
-        </nav> 
+        <nav className="mt-5">
+          <Link className="text-xl p-7" href="/">
+            Home
+          </Link>
+          <Link className="text-xl p-7" href="/converter">
+            Converter
+          </Link>
+        </nav>
         {children}
       </body>
     </html>
